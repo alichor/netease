@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>十二星座运动内心戏</title>
+    <meta content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="十二星座 咕咚 性感 诱惑 约跑 约炮 运动 健身 美女 泳装 微动态 爆乳 黑丝 游泳 慢跑 剑道 乒乓球 瑜伽 棒球 羽毛球 平衡训练 拳击 骑行 瘦身" />
+    <meta name="author" content="昂思互动" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="no"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="false"/>
+    <meta name="360-fullscreen" content="false"/>
+    <style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+    <style>
+        .hide{
+            display: none!important;
+        }
+       .qrBg{
+           background: url("res/end_download_bg.jpg") no-repeat;
+           width: 100%;
+           height: 100%;
+           -webkit-box-align:center;
+           position: absolute;
+           top: 0px;
+           left: 0px;
+           z-index: 100;
+           overflow: hidden;
+
+       }
+       .center{
+           text-align: center;
+       }
+        img{
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="padding:0; margin: 0; background: #000;">
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
+        <img src='img/share.jpg' />
+    </div>
+    <canvas id="gameCanvas" width="640" height="1039"></canvas>
+    <div id="qr_download" class="qrBg hide" onclick="closeQrDownload()">
+        <div id="ios" class="center hide" >
+            <div><img id="ios_hand" src="res/end_download_hand.png"></div>
+            <div><img id="ios_qr" src="res/end_download_qr_ios.png"></div>
+            <div><img id="ios_tip" src="res/end_download_tip.png"></div>
+            <div><img id="ios_watch" src="res/end_download_watch.png"></div>
+        </div>
+    </div>
+    <div class="hide">
+        <audio id="bgSound" loop="true"></audio>
+    </div>
+    <script src="jskit/jquery-2.1.4.min.js"></script>
+    <script src="jskit/cocos2d.mini.js"></script>
+    <script src="main.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="src/wx.js"></script>
+   
+</body>
+</html>

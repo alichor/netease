@@ -1,0 +1,95 @@
+/*reset*/
+* { -webkit-tap-highlight-color:rgba(0, 0, 0, 0) }   
+/* padding内边距 margin外边距 */
+html, body, div, p, h1, h2, h3, h4, h5, ol, ul, li, dl, dt, dd { padding:0; margin:0 }
+/* padding内边距 margin外边距 */
+html { font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", sans-serif; -webkit-text-size-adjust: 100%; }  
+/* font-family字体类型  Webkit内核浏览器的文字大小调整功能 none禁用 */
+body { font-size:14px; background:#ffffff; line-height:1.5 }
+/* font-size字体大小 background背景颜色 line-height“行间距14*1.5=21 */
+img { vertical-align: middle; border:0 }
+/* vertical-align垂直对齐方式 border边框 */
+ul, ol { list-style:none }
+/* list-style 简写属性在一个声明中设置所有的列表属性 */
+a { text-decoration:none; color:#000 }
+/* 默认。定义标准的文本。 */
+/*main*/
+html,body,#app{width:100%; height:100%; overflow-x:hidden}
+#app {max-width:640px; margin:0 auto; position:relative;background:#fef7f1;}
+
+/*loading*/
+#pg0{width:100%;height:100%; position:absolute; overflow-x: hidden;}
+#pg0_1{width:100%;height:100%;left:0%;top:0%;position:absolute;background:url(../images/1.jpg) no-repeat center;background-size:100% 100%;}
+#pg0_2{width:100%;height:100%;left:0%;top:0%;position:absolute;background:url(../images/1.png) no-repeat center;background-size:auto 100%;}
+
+/*pg1*/
+#pg1{width:100%;height:100%; position:absolute; overflow-x: hidden;background:url(../images/1.jpg) no-repeat center;background-size:100% 100%;}
+#pg1_1{width:100%;height:100%; position:absolute; overflow-x: hidden;background:url(../images/2.png) no-repeat center;background-size:100% 100%;}
+#pg1_2{width:90%;height:18%;left:6%;top:80%;position:absolute;background-size:auto 85%;}
+#pg1_3{width:90%;height:18%;left:5%;top:80%;position:absolute;}
+#pg1_4{width:14%;height:14%; position:absolute;left:35%;top:5%;background:url(../images/quan.png) no-repeat center;background-size:100% ;}
+/*.touch{width:82%;height:16%;left:9%;top:79%;position:absolute;z-index:101;opacity:0;}*/
+
+/*pg2*/
+#pg2{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/3.jpg) no-repeat center;background-size:100% 100%;}
+#pg2_0{width:100%;height:100%;left:0%;top:0%;position:absolute;}
+#pg2_1{width:100%;height:100%;left:0%;top:0%;position:absolute;}
+#pg2_2{width:100%;height:100%;left:0%;top:0%;position:absolute;}
+#pg2_3{width:28%;height:7.5%;left:47%;top:85%;position:absolute;opacity:0;}
+#pg2_3_1{width:14%;height:14%; position:absolute;right:6%;top:8%;background:url(../images/quan.png) no-repeat center;background-size:100% ;}
+
+
+.jie_animation{-webkit-animation-duration:1s;-webkit-animation-timing-function:ease;-webkit-animation-fill-mode:both;}
+
+.p2_animation{-webkit-animation-duration:5s;-webkit-animation-timing-function:ease;-webkit-animation-fill-mode:both;-webkit-animation-iteration-count:infinite;}
+/*pg3*/
+#pg3{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/4.png) no-repeat center;background-size:100% 100%;}
+#pg3_2{width:14%;height:14%; position:absolute;right:6%;bottom:-3%;background:url(../images/quan.png) no-repeat center;background-size:100% ;}
+#pg3_4{width:100%;height:100%;left:0%;top:0%;position:absolute;opacity:0;}
+
+/*pg4*/
+#pg4{width:100%;height:100%;position:absolute;overflow:scroll;background:#ffffff;}
+#pg4_1{width:100%;}
+#pg4_1 img{width:100%;}
+#pg4_2{width:14%;height:14%; position:absolute;right:8%;top:130%;background:url(../images/quan.png) no-repeat center;background-size:100% ;}
+#pg4_3{width:60%;height:50%; position:absolute;left:18%;top:135%;}
+#pg4_3 video{width:100%;}
+/*pg5*/
+#pg5{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/6.jpg) no-repeat center;background-size:100% 100%;}
+#pg5_2{width:100%;height:100%;left:0%;top:0%;position:absolute;background:url(../images/6_1.png) no-repeat center;background-size:auto 100%;opacity:0;}
+#pg5_3{width:100%;height:100%;left:0%;top:0%;position:absolute;background:url(../images/6_2.png) no-repeat center;background-size:auto 100%;opacity:0;}
+#pg5_4{width:100%;height:100%;left:0%;top:0%;position:absolute;background:url(../images/6_3.gif) no-repeat center;background-size:auto 100%;display:none;}
+#pg5_5{width:100%;height:100%;left:0%;top:0%;position:absolute;background:url(../images/6_4.png) no-repeat center;background-size:auto 100%;opacity:0;}
+
+/*pg6*/
+#pg6{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/7.jpg) no-repeat center;background-size:100% 100%;}
+
+/*pg7*/
+#pg7{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/8.jpg) no-repeat center;background-size:100% 100%;}
+/*.touch10{width:75%;height:15%;left:15%;top:81%;position:absolute;z-index:101;opacity:0;}*/
+
+/*pg8*/
+#pg8{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/9.jpg) no-repeat center;background-size:100% 100%;}
+#pg8_2{width:80%;height:60%;left:10%;top:15%;position:absolute;}
+#pg8_3{width:37.5%;height:10%;left:7.5%;bottom:5.5%;position:absolute;}
+#pg8_4{width:37.5%;height:10%;right:7.5%;bottom:5.5%;position:absolute;}
+
+/*pg9*/
+#pg9{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/10.jpg) no-repeat center;background-size:100% 100%;}
+#pg9_1{width:80%;height:60%;left:10%;top:15%;position:absolute;color:#522422;font-size:1.2em;line-height:2em;}
+#pg9_2{width:80%;height:60%;left:10%;top:25%;position:absolute;color:#522422;font-size:1.5em;line-height:2em;}
+#pg9_3{width:37.5%;height:10%;left:7.5%;bottom:5.5%;position:absolute;}
+#pg9_4{width:37.5%;height:10%;right:7.5%;bottom:5.5%;position:absolute;}
+
+/*pg9*/
+#pg10{width:100%;height:100%;position:absolute;overflow:hidden;background:url(../images/mask.png) no-repeat center;background-size:100% 100%;}
+
+/*.touch12{width:40%;height:12%;left:10%;top:81%;position:absolute;z-index:101;opacity:0;}*/
+/*.touch13{width:40%;height:12%;left:55%;top:81%;position:absolute;z-index:101;opacity:0;}*/
+
+.touch14{width:100%;height:100%;position:absolute;overflow:hidden;z-index:101;opacity:0;}
+
+/*音乐播放图层*/
+.sound{position: fixed;width: 12%;height:7.5%;right:0.5%; top:1%;z-index: 150;display:none;}
+#splay{position: absolute;left: 0;top:0;height: 80%;z-index:102;}
+#sclose{position: absolute;left: 0;top:0;height: 80%;z-index:102;}

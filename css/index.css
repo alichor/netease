@@ -1,0 +1,97 @@
+*{-webkit-tap-highlight-color:transparent}
+body,dd,div,dl,dt,h1,h2,h3,h4,h5,html,li,ol,p,ul{padding:0;margin:0}
+html{font-family:"Helvetica Neue",Helvetica,STHeiTi,"Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+body{font-size:14px;background:#fef7f1;line-height:1.5;font-family:"微软雅黑";}
+img{vertical-align:middle;border:0}
+ol,ul{list-style:none}
+a{text-decoration:none;color:#000}
+#app,body,html{width:100%;height:100%;overflow-x:hidden}
+#app{max-width:640px;margin:0 auto;position:relative;background:#fef7f1}
+#pg0{width:100%;height:100%;position:absolute;overflow-x:hidden}
+#pg0_1{width:100%;height:100%;left:0;top:0;position:absolute;background:url(http://175.6.15.155/wechat/sound/bg0_1.gif) no-repeat center;background-size:100% 100%}
+#pg0_2{width:100%;height:100%;left:0;top:0;position:absolute;background:url(http://175.6.15.155/wechat/sound/bg0_2.gif) no-repeat center;background-size:auto 100%}
+#pg0_3{width:100%;height:100%;left:0;top:0;position:absolute;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/home.jpg) no-repeat center;background-size:auto 100%}
+#pg1{width:100%;height:100%;position:absolute;overflow-x:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/home.jpg) no-repeat center;background-size:100% 100%}
+#pg1_1{width:100%;height:100%;left:0;top:0;position:absolute}
+#pg1_2{width:90%;height:18%;left:6%;top:80%;position:absolute;background-size:auto 85%}
+#pg1_3{width:40%;height:10%;left:28%;top:78%;position:absolute}
+#pg1_4{width:40%;height:10%;left:28%;top:78%;position:absolute;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/start.png) no-repeat center;background-size:auto 100%;-webkit-animation:warn 1s ease-out;-moz-animation:warn 1s ease-out;animation:warn 1s ease-out;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;animation-iteration-count:infinite}
+@keyframes warn{0%{transform:scale(.75)}
+50%{transform:scale(1)}
+100%{transform:scale(1.2)}
+}
+@-webkit-keyframes warn{0%{-webkit-transform:scale(.75)}
+50%{-webkit-transform:scale(1)}
+100%{-webkit-transform:scale(1.2)}
+}
+.warn{-webkit-animation:warn .3s ease-out;-moz-animation:warn .3s ease-out;animation:warn .3s ease-out;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;animation-iteration-count:infinite}
+#pg2{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg2_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q1.png) no-repeat center;background-size:100% 100%}
+#pg2_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q1_1.png) no-repeat center;background-size:100%}
+#pg2_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q1_2.png) no-repeat center;background-size:100%}
+#pg2_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q1_3.png) no-repeat center;background-size:100%}
+#pg3{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg3_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q2.png) no-repeat center;background-size:100% 100%}
+#pg3_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q2_1.png) no-repeat center;background-size:100%}
+#pg3_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q2_2.png) no-repeat center;background-size:100%}
+#pg3_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q2_3.png) no-repeat center;background-size:100%}
+#pg4{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg4_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q3.png) no-repeat center;background-size:100% 100%}
+#pg4_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q3_1.png) no-repeat center;background-size:100%}
+#pg4_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q3_2.png) no-repeat center;background-size:100%}
+#pg4_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q3_3.png) no-repeat center;background-size:100%}
+#pg5{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg5_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q4.png) no-repeat center;background-size:100% 100%}
+#pg5_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q4_1.png) no-repeat center;background-size:100%}
+#pg5_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q4_2.png) no-repeat center;background-size:100%}
+#pg5_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q4_3.png) no-repeat center;background-size:100%}
+#pg6{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg6_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q5.png) no-repeat center;background-size:100% 100%}
+#pg6_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q5_1.png) no-repeat center;background-size:100%}
+#pg6_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q5_2.png) no-repeat center;background-size:100%}
+#pg6_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q5_3.png) no-repeat center;background-size:100%}
+#pg7{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg7_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q6.png) no-repeat center;background-size:100% 100%}
+#pg7_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q6_1.png) no-repeat center;background-size:100%}
+#pg7_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q6_2.png) no-repeat center;background-size:100%}
+#pg7_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q6_3.png) no-repeat center;background-size:100%}
+#pg8{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg8_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q7.png) no-repeat center;background-size:100% 100%}
+#pg8_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q7_1.png) no-repeat center;background-size:100%}
+#pg8_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q7_2.png) no-repeat center;background-size:100%}
+#pg8_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q7_3.png) no-repeat center;background-size:100%}
+#pg9{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg9_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q8.png) no-repeat center;background-size:100% 100%}
+#pg9_1_1{width:80%;height:7%;left:11%;top:52%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q8_1.png) no-repeat center;background-size:100%}
+#pg9_1_2{width:80%;height:7%;left:11%;top:60.5%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q8_2.png) no-repeat center;background-size:100%}
+#pg9_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/q8_3.png) no-repeat center;background-size:100%}
+#pg10{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg10_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/a1.png) no-repeat center;background-size:100% 100%}
+#pg10_1_1{width:30%;height:7%;left:14%;top:72%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/make.png) no-repeat center;background-size:100%}
+#pg10_1_2{width:30%;height:7%;left:14%;top:60.5%;position:absolute;display:none}
+#pg10_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none}
+#pg11{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg11_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/a2.png) no-repeat center;background-size:100% 100%}
+#pg11_1_1{width:30%;height:7%;left:56%;top:70%;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/make.png) no-repeat center;background-size:100%}
+#pg11_1_2{width:30%;height:7%;left:56%;top:60%;position:absolute;display:none}
+#pg11_1_3{width:80%;height:7%;left:11%;top:70%;position:absolute;display:none}
+.tb{font-size:1.2em;color:#000;width:100%;line-height:1.5em;height:2em;background:rgba(255,255,255,.3);border:2px dotted #000;font-family:"微软雅黑";text-align:center}
+#pg12{width:100%;height:100%;position:absolute;overflow:hidden;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/bg.jpg) no-repeat center;background-size:100% 100%}
+#pg12_0{width:100%;height:100%;left:0;top:0;position:absolute;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/my.png) no-repeat center;background-size:100% 100%}
+#pg12_1_1{width:18%;left:63%;top:70%;position:absolute;display:none;color:#FAC700;text-align:center;background:rgba(255,255,255,.3);border-radius:5px;line-height:2em;height:2em;font-size:1em}
+#pg12_1_2{width:18%;left:63%;top:77%;position:absolute;display:none;color:#FAC700;text-align:center;background:rgba(255,255,255,.3);border-radius:5px;line-height:2em;height:2em;font-size:1em}
+#pg12_1_5{width:18%;left:63%;top:84%;position:absolute;display:none;color:#FAC700;text-align:center;background:rgba(255,255,255,.3);border-radius:5px;line-height:2em;height:2em;font-size:1em}
+#pg12_1_4{width:19%;left:63%;top:48%;position:absolute;display:none;font-size:0.8em;color:#e2e27d;text-align:center;}
+#pg12_1_4 img{width:100%;}
+#pg12_1_3{width:72%;left:17%;top:13%;position:absolute;display:none;font-size:1.5em;color:#000;line-height:1.5em}
+#pg12_1_3 p{}
+#pg12_1_3 .title{text-align:center;font-size:1.75em;line-height:1.75em;width:100%;display:block;}
+.jie_animation{-webkit-animation-duration:1s;-webkit-animation-timing-function:ease;-webkit-animation-fill-mode:both}
+.p2_animation{-webkit-animation-duration:5s;-webkit-animation-timing-function:ease;-webkit-animation-fill-mode:both;-webkit-animation-iteration-count:infinite}
+.d-share{width:100%;height:100%;left:0;top:0;position:absolute;overflow:hidden;background:rgba(0,0,0,.8);z-index:1500;display:none;}
+#save{width:100%;height:100%;left:0;top:0;position:absolute;overflow:hidden;z-index:1501;display:none;background:url(http://h5.vr.mgtv.com/2016/zmfm/images/tip.png) no-repeat bottom rgba(0,0,0,.8);background-size:100%}
+.d-share img{width:100%;}
+.touch14{width:100%;height:100%;position:absolute;overflow:hidden;z-index:101;opacity:0}
+.sound{position:fixed;width:12%;height:7.5%;right:.5%;top:1%;z-index:150;display:none}
+#splay{position:absolute;left:0;top:0;height:80%;z-index:102}
+#sclose{position:absolute;left:0;top:0;height:80%;z-index:102}

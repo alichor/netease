@@ -1,0 +1,463 @@
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+body,
+dd,
+div,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+html,
+li,
+ol,
+p,
+ul {
+    padding: 0;
+    margin: 0
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 14px;
+    background: #1f0f01;
+    line-height: 1.5;
+    font-family: "微软雅黑";
+}
+
+img {
+    vertical-align: middle;
+    border: 0
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+#app,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden
+}
+
+#app {
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background: #fef7f1
+}
+
+#pg0 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    background: url(../image/p1.jpg) no-repeat center;
+    background-size: 100% 100%
+}
+
+#sign_name {
+    width: 40%;
+    left: 30%;
+    top: 53%;
+    position: absolute;
+    color: #f1dd98;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breathe;
+    -webkit-animation-duration: 1500ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes breathe {
+    0% {
+        opacity: .4;
+        box-shadow: 0 1px 2px rgba(0, 147, 223, 0.4), 0 1px 1px rgba(0, 147, 223, 0.1) inset;
+    }
+}
+
+#pg0_2 {
+    width: 60%;
+    height: 90px;
+    left: 20%;
+    bottom: 5%;
+    position: absolute;
+    border: 1px solid #fef7f1;
+}
+
+#pg0_1 {
+    width: 90%;
+    height: 250px;
+    left: 5%;
+    top: 55%;
+    position: absolute;
+}
+
+/* 自动轮播样式 */
+.banner-container {
+    width: 90%;
+    height: 200px;
+    /* 轮播图居中 */
+    margin: 1rem auto;
+    /* 隐藏超出展示容器的内容 */
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-container .banner-img-container {
+    width: 3000px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    /* 开启弹性盒，让图片横向排列 */
+    display: flex;
+    animation: run 10s ease infinite;
+}
+
+.banner-container .banner-img-container img {
+    width: 600px;
+    height: 100%;
+}
+
+/* 动画关键帧 */
+@keyframes run {
+
+    0%,
+    10% {
+        /* margin-left: 0; */
+        transform: translateX(0);
+    }
+
+    20%,
+    30% {
+        /* margin-left: -1200px;; */
+        transform: translateX(-600px);
+    }
+
+    40%,
+    50% {
+        /* margin-left: -2400px; */
+        transform: translateX(-1200px);
+    }
+
+    60%,
+    70% {
+        /* margin-left: -3600px; */
+        transform: translateX(-1800px);
+    }
+
+    80%,
+    90% {
+        /* margin-left: -4800px; */
+        transform: translateX(-2400px);
+    }
+
+    100% {
+        /* margin-left: 0; */
+        transform: translateX(0);
+    }
+}
+
+#pg1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    background: url(../image/p2.jpg) no-repeat center;
+    background-size: 100% 100%
+}
+
+/* 手动轮播样式 */
+.banner-container1 {
+    width: 80%;
+    height: 420px;
+    margin: 14rem auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 轮播图圆点样式 */
+.banner-container1 .banner-nav-a {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    position: absolute;
+    border: 1px solid #654b3d;
+    box-shadow: 0 1px 2px #654b3d;
+    bottom: 1rem;
+    transform: rotate(45deg);
+    margin: 0;
+    z-index: 1;
+}
+
+.banner-container1 input {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 1rem;
+    margin: 0;
+    cursor: pointer;
+    transform: rotate(45deg);
+    z-index: 2;
+    opacity: 0;
+}
+
+/* 设置导航圆点偏移量（居中布局）*/
+#banner-control-1,
+#banner-control-1+.banner-nav-a {
+    left: 30%;
+}
+
+#banner-control-2,
+#banner-control-2+.banner-nav-a {
+    left: 40%;
+}
+
+#banner-control-3,
+#banner-control-3+.banner-nav-a {
+    left: 50%;
+}
+
+#banner-control-4,
+#banner-control-4+.banner-nav-a {
+    left: 60%;
+}
+
+#banner-control-5,
+#banner-control-5+.banner-nav-a {
+    left: 70%;
+}
+
+/* 设置高亮 */
+/*当 input 被选中时 他的兄弟级a标签高亮展示*/
+input:checked+.banner-nav-a {
+    width: 10px;
+    height: 10px;
+    background-color: #dfb68d;
+}
+
+
+
+/* 设置轮播图动画 */
+#banner-control-1:checked~.banner-img-container {
+    transform: translateX(0%);
+}
+
+#banner-control-2:checked~.banner-img-container {
+    transform: translateX(-20%);
+}
+
+#banner-control-3:checked~.banner-img-container {
+    transform: translateX(-40%);
+}
+
+#banner-control-4:checked~.banner-img-container {
+    transform: translateX(-60%);
+}
+
+#banner-control-5:checked~.banner-img-container {
+    transform: translateX(-80%);
+}
+
+.banner-container1 .banner-img-container {
+    width: 500%;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.banner-container1 .banner-img-container ul {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-container1 .banner-img-container ul li {
+    width: 50%;
+    float: left;
+    margin:3px 0;
+    display: inline;
+}
+
+.banner-container1 .banner-img-container ul li .item {
+    width: 100%;
+    float: left;
+    display: inline;
+    cursor: pointer;
+}
+
+.banner-container1 .banner-img-container ul li img {
+    width: 100%;
+}
+
+.banner-container1 .banner-img-container ul li input {
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0.5;
+    background: #dfb68d;
+}
+
+/*当 input 被选中时 他的兄弟级img标签高亮展示*/
+input:checked+.item {
+    border: 1px solid #a99281;
+    box-shadow: 0 0px 2px #a99281;
+}

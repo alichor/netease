@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>［419特刊］你不可不知的床上运动18招</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='text/javascript' charset='utf8' src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/jquery.bgmusic.js"></script>
+    <style type="text/css">
+        body
+        {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        #pg2
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            background: url(img2/draw.gif) no-repeat center;
+            background-size: 100% 100%;
+        }
+        #canvas
+        {
+            width: 80%;
+            height: 30%;
+            left: 10%;
+            top: 12%;
+            position: absolute;
+            background: #ff0;
+            z-index: 999;
+            display: none;
+        }
+        #button
+        {
+            width: 40%;
+            height: 15%;
+            left: 30%;
+            top: 65%;
+            position: absolute;
+            background: transparent;
+            z-index: 999;
+        }
+        .d-share
+        {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            overflow: hidden;
+            background: rgba(0,0,0,.8);
+            z-index: 1500;
+            display: none;
+        }
+        #save
+        {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            overflow: hidden;
+            z-index: 1501;
+            display: none;
+            background: url(http://h5.vr.mgtv.com/2016/zmfm/images/tip.png) no-repeat bottom rgba(0,0,0,.8);
+            background-size: 100%;
+        }
+        .d-share img
+        {
+            width: 100%;
+        }
+        .sound{position:fixed;width:12%;height:7.5%;right:.5%;top:1%;z-index:150;display:none}
+#splay{position:absolute;left:0;top:0;height:80%;z-index:102}
+#sclose{position:absolute;left:0;top:0;height:80%;z-index:102}
+
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;">
+
+    <div id="bmg" style="display: none;" class="sound">
+    </div>
+    <div id="pg2">
+        <canvas id='canvas'></canvas>
+        <div id="button" onclick="storeandjump()">
+        </div>
+    </div>
+    <div class="d-share">
+        <img src="images/share.png" class="d-share-hint">
+    </div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        function storeandjump() {
+            var base64 = document.getElementById("canvas").toDataURL("image/png");
+            var lStorage = window.localStorage;
+            lStorage.draw = base64;
+            //console.log(lStorage.draw);
+            setTimeout(function () {
+                document.location = 'star3.htm';
+             }, 500);
+        }
+
+        $(document).ready(function () {
+            var title = "［419特刊］你不可不知的床上运动18招",
+				link = "http://h5.vr.mgtv.com/2016/zmfm/star2.htm",
+				desc = "”特别“的日子送给”特别“的你！",
+				img = "http://h5.vr.mgtv.com/2016/zmfm/img2/logo.jpg",
+				api = "http://v.api.mgtv.com/weixin/sign";
+            $.ajax({
+                type: "get",
+                async: false,
+                url: "http://v.api.mgtv.com/weixin/sign?url=" + encodeURIComponent(location.href.split("#")[0]),
+                dataType: "jsonp",
+                jsonp: "callback", //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+                jsonpCallback: "flightHandler", //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+                success: function (e) {
+                    wx.config({
+                        debug: !1,
+                        appId: e.data.appId,
+                        timestamp: e.data.timestamp,
+                        nonceStr: e.data.nonceStr,
+                        signature: e.data.signature,
+                        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage"]
+                    }), wx.ready(function (e) {
+                        wx.onMenuShareTimeline({
+                            title: desc,
+                            link: link,
+                            imgUrl: img,
+                            trigger: function (res) {
+                                this.link = sharelink;
+                            }
+                        }), wx.onMenuShareAppMessage({
+                            title: title,
+                            desc: desc,
+                            link: link,
+                            imgUrl: img,
+                            trigger: function (res) {
+                                this.link = sharelink;
+                            }
+                        })
+                    })
+                },
+                error: function () {
+                    alert('fail');
+                }
+            });
+
+
+            $("#bmg").bgmusic({ 'url': 'http://h5.vr.mgtv.com/2016/zmfm/img2/music.mp3', 'autoplay': true });
+            var audio = document.querySelector('audio');
+            audio.play();
+        });
+
+
+
+        setTimeout(function () { $("#canvas").fadeIn(1000); }, 5000);
+        $(".d-share").click(function () { $(".d-share").fadeOut(500); });
+
+        var canvas = document.getElementById('canvas');
+        canvas.addEventListener('mousemove', onMouseMove, false);
+        canvas.addEventListener('mousedown', onMouseDown, false);
+        canvas.addEventListener('mouseup', onMouseUp, false);
+
+        canvas.addEventListener('touchstart', onMouseDown, false);
+        canvas.addEventListener('touchmove', onMouseMove, false);
+        canvas.addEventListener('touchend', onMouseUp, false)
+
+
+        canvas.height = 300;
+        canvas.width = getWidth() - 50;
+        var ctx = canvas.getContext('2d');
+
+        ctx.lineWidth = 3.0; // 设置线宽
+        ctx.strokeStyle = "#CC0000"; // 设置线的颜色
+
+        var flag = false;
+        function onMouseMove(evt) {
+            evt.preventDefault();
+            if (flag) {
+                var p = pos(evt);
+                ctx.lineTo(p.x, p.y);
+                ctx.lineWidth = 6.0; // 设置线宽
+                ctx.shadowColor = "#CC0000";
+                ctx.shadowBlur = 1;
+                //ctx.shadowOffsetX = 6;
+                ctx.stroke();
+            }
+        }
+
+        function onMouseDown(evt) {
+            evt.preventDefault();
+            ctx.beginPath();
+            var p = pos(evt);
+            ctx.moveTo(p.x, p.y);
+            flag = true;
+        }
+
+
+        function onMouseUp(evt) {
+            evt.preventDefault();
+            flag = false;
+        }
+
+        /*
+        var clear = document.getElementById('button');
+        clear.addEventListener('click', function () {
+        //ctx.clearRect(0, 0, canvas.width, canvas.height);
+        $(".d-share").fadeOut(500);
+        }, false);
+        */
+
+        function pos(event) {
+            var x, y;
+            if (isTouch(event)) {
+                x = event.touches[0].pageX;
+                y = event.touches[0].pageY;
+            } else {
+                x = event.layerX;
+                y = event.layerY;
+            }
+            return { x: x, y: y };
+        }
+
+        function isTouch(event) {
+            var type = event.type;
+            if (type.indexOf('touch') >= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function getWidth() {
+            var xWidth = null;
+
+            if (window.innerWidth !== null) {
+                xWidth = window.innerWidth;
+            } else {
+                xWidth = document.body.clientWidth;
+            }
+
+            return xWidth;
+        }
+
+
+        $("#splay").click(function () {
+            audio.pause();
+            $("#splay").hide();
+            $("#sclose").show();
+        });
+
+        $("#sclose").click(function () {
+            audio.play();
+            $("#splay").show();
+            $("#sclose").hide();
+        });
+    </script>
+</body>
+</html>

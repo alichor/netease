@@ -1,0 +1,722 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>丁磊邀请你参加520发布会</title>
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/star2.css" />
+    <script type='text/javascript' charset='utf8' src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/jquery.touchwipe.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/jquery.bgmusic.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="pg0" style="display: block">
+            <div id="pg0_1">
+                <div class="banner-container">
+                    <!-- 创建图片存储容器 -->
+                    <div class="banner-img-container">
+                        <img src="./image/sign-wall.png" alt="">
+                        <img src="./image/sign-wall.png" alt="">
+                        <img src="./image/sign-wall.png" alt="">
+                        <img src="./image/sign-wall.png" alt="">
+                        <img src="./image/sign-wall.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="sign_name" contenteditable="true">
+                签名栏
+            </div>
+            <!--按钮区域-->
+            <div id="pg0_2"></div>
+        </div>
+        <div id="pg1" style="display: block">
+            <div class="banner-container1">
+                <!-- 这里利用input的checked状态来为a标签添加选中状态 -->
+                <!-- 布局方式采用的是 input + a 标签，不可以添加父级，不然css无法选择到 banner-img-container -->
+                <!-- 轮播图圆点 -->
+                <input type="radio" name="radio-set" checked="checked" id="banner-control-1">
+                <a class="banner-nav-a" href="#banner01"></a>
+                <input type="radio" name="radio-set" id="banner-control-2">
+                <a class="banner-nav-a" href="#banner02"></a>
+                <input type="radio" name="radio-set" id="banner-control-3">
+                <a class="banner-nav-a" href="#banner03"></a>
+                <input type="radio" name="radio-set" id="banner-control-4">
+                <a class="banner-nav-a" href="#banner04"></a>
+                <input type="radio" name="radio-set" id="banner-control-5">
+                <a class="banner-nav-a" href="#banner05"></a>
+                <!-- 轮播图图片容器 -->
+                <div class="banner-img-container">
+                    <ul id="banner01">
+                        <li>
+                            <a href="#item-1" class="item"><img src="./image/item_01.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-2" class="item"><img src="./image/item_02.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-3" class="item"><img src="./image/item_03.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-4" class="item"><img src="./image/item_04.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-6" class="item"><img src="./image/item_06.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-7" class="item"><img src="./image/item_07.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-8" class="item"><img src="./image/item_08.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-9" class="item"><img src="./image/item_09.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-10" class="item"><img src="./image/item_10.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-11" class="item"><img src="./image/item_11.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#item-12" class="item"><img src="./image/item_12.png" class="item-nav-img" alt="" /></a>
+                        </li>
+                    </ul>
+                    <ul id="banner02">
+
+                        <li>
+                            <img src="./image/item6.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                    </ul>
+
+                    <ul id="banner03">
+
+                        <li>
+                            <img src="./image/item6.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item6.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                    </ul>
+                    <ul id="banner04">
+
+                        <li>
+                            <img src="./image/item6.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                    </ul>
+                    <ul id="banner05">
+
+                        <li>
+                            <img src="./image/item6.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item7.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="./image/item8.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="pg1_2">
+            </div>
+            <div id="pg1_3">
+            </div>
+            <div id="pg1_4">
+            </div>
+            <div id="pg1_5">
+            </div>
+        </div>
+        <div id="pg2" style="display: none">
+            <div id="pg2_0" style="display: none;">
+            </div>
+            <div id="pg2_1" style="display: none; opacity: 0">
+                <div id="pg2_1_1" style="display: none">
+                </div>
+                <div id="pg2_1_2" style="display: none">
+                </div>
+                <div id="pg2_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg3" style="display: none">
+            <div id="pg3_0" style="display: none;">
+            </div>
+            <div id="pg3_1" style="display: none; opacity: 0">
+                <div id="pg3_1_1" style="display: none">
+                </div>
+                <div id="pg3_1_2" style="display: none">
+                </div>
+                <div id="pg3_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg4" style="display: none">
+            <div id="pg4_0" style="display: none;">
+            </div>
+            <div id="pg4_1" style="display: none; opacity: 0">
+                <div id="pg4_1_1" style="display: none">
+                </div>
+                <div id="pg4_1_2" style="display: none">
+                </div>
+                <div id="pg4_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg5" style="display: none">
+            <div id="pg5_0" style="display: none;">
+            </div>
+            <div id="pg5_1" style="display: none; opacity: 0">
+                <div id="pg5_1_1" style="display: none">
+                </div>
+                <div id="pg5_1_2" style="display: none">
+                </div>
+                <div id="pg5_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg6" style="display: none">
+            <div id="pg6_0" style="display: none;">
+            </div>
+            <div id="pg6_1" style="display: none; opacity: 0">
+                <div id="pg6_1_1" style="display: none">
+                </div>
+                <div id="pg6_1_2" style="display: none">
+                </div>
+                <div id="pg6_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg7" style="display: none">
+            <div id="pg7_0" style="display: none;">
+            </div>
+            <div id="pg7_1" style="display: none; opacity: 0">
+                <div id="pg7_1_1" style="display: none">
+                </div>
+                <div id="pg7_1_2" style="display: none">
+                </div>
+                <div id="pg7_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg8" style="display: none">
+            <div id="pg8_0" style="display: none;">
+            </div>
+            <div id="pg8_1" style="display: none; opacity: 0">
+                <div id="pg8_1_1" style="display: none">
+                </div>
+                <div id="pg8_1_2" style="display: none">
+                </div>
+                <div id="pg8_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg9" style="display: none">
+            <div id="pg9_0" style="display: none;">
+            </div>
+            <div id="pg9_1" style="display: none; opacity: 0">
+                <div id="pg9_1_1" style="display: none">
+                </div>
+                <div id="pg9_1_2" style="display: none">
+                </div>
+                <div id="pg9_1_3" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div id="pg10" style="display: none">
+            <div id="pg10_0" style="display: none;">
+            </div>
+            <div id="pg10_1" style="display: none; opacity: 0">
+                <div id="pg10_1_1" style="display: none">
+                </div>
+                <div id="pg10_1_2" style="display: none">
+                    <input type="text" class="tb" id="tbname1" maxlength="10" value="请输入名字" />
+                </div>
+            </div>
+        </div>
+        <div id="pg11" style="display: none">
+            <div id="pg11_0" style="display: none;">
+            </div>
+            <div id="pg11_1" style="display: none; opacity: 0">
+                <div id="pg11_1_1" style="display: none">
+                </div>
+                <div id="pg11_1_2" style="display: none">
+                    <input type="text" class="tb" id="tbname2" maxlength="10" value="请输入名字" />
+                </div>
+            </div>
+        </div>
+        <div id="pg12" style="display: none">
+            <div id="pg12_0" style="display: none;">
+            </div>
+            <div id="pg12_1" style="display: none; opacity: 0">
+                <div id="pg12_1_1" style="display: none">
+                    分享结果
+                </div>
+                <div id="pg12_1_2" style="display: none">
+                    重来一次
+                </div>
+                <div id="pg12_1_5" style="display: none">
+                    下载图片
+                </div>
+                <div id="pg12_1_3" style="display: none">
+                </div>
+                <div id="pg12_1_4" style="display: none">
+                    <img src="images/qrcode.png" /><br />快来扫码测试
+                </div>
+            </div>
+        </div>
+        <div class="sound">
+        </div>
+        <div class="d-share">
+            <img src="images/share.png" class="d-share-hint">
+        </div>
+        <div id="save" style="z-index:1600;">
+
+        </div>
+    </div>
+    <div id="bmg" style="display: none;" class="sound">
+    </div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        //获取url中的参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+        $("#bmg").bgmusic({ 'url': 'http://h5.vr.mgtv.com/2016/zmfm/img2/music.mp3', 'autoplay': true });
+        var audio = document.querySelector('audio');
+        var sharelink = "http://h5.vr.mgtv.com/2016/zmfm/star2.htm";
+        $(document).ready(function () {
+            var result = getUrlParam("result");
+
+            console.log("ready:" + result);
+            if (result == null) {
+                $("#pg1").css("display", "block");
+            } else {
+                showshareresult(result);
+            }
+            //audio.play();
+            $(".sound").css("display", "block");
+            /*
+            $("#splay").show();
+            $("#sclose").hide();
+            */
+            $("#tbname1").click(function () {
+                if ($("#tbname1").val() == "请输入名字") { $("#tbname1").val(""); }
+            });
+            $("#tbname2").click(function () {
+                if ($("#tbname2").val() == "请输入名字") { $("#tbname2").val(""); }
+            });
+
+            var title = "丁磊邀请你参加520发布会",
+                link = "http://h5.vr.mgtv.com/2016/zmfm/star2.htm",
+                desc = "丁磊邀请你参加520发布会",
+                img = "http://h5.vr.mgtv.com/2016/zmfm/img2/logo.jpg",
+                api = "http://v.api.mgtv.com/weixin/sign";
+            $.ajax({
+                type: "get",
+                async: false,
+                url: "http://v.api.mgtv.com/weixin/sign?url=" + encodeURIComponent(location.href.split("#")[0]),
+                dataType: "jsonp",
+                jsonp: "callback", //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+                jsonpCallback: "flightHandler", //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+                success: function (e) {
+                    wx.config({
+                        debug: !1,
+                        appId: e.data.appId,
+                        timestamp: e.data.timestamp,
+                        nonceStr: e.data.nonceStr,
+                        signature: e.data.signature,
+                        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage"]
+                    }), wx.ready(function (e) {
+                        wx.onMenuShareTimeline({
+                            title: desc,
+                            link: link,
+                            imgUrl: img,
+                            trigger: function (res) {
+                                this.link = sharelink;
+                            }
+                        }), wx.onMenuShareAppMessage({
+                            title: title,
+                            desc: desc,
+                            link: link,
+                            imgUrl: img,
+                            trigger: function (res) {
+                                this.link = sharelink;
+                            }
+                        })
+                    })
+                },
+                error: function () {
+                    alert('fail');
+                }
+            });
+        });
+
+        function pageinit() {
+
+        }
+
+        $("#pg0_2").click({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(1); }, 500);
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg1").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () {
+                    //showquestion(3);
+                    document.location = "drawing.html";
+                }, 500);
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: false
+        });
+        $("#pg2").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(3); }, 500);
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg3").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(4); }, 500);
+            },
+            wipeDown: function () {
+                setTimeout(function () { showquestion(1); }, 500);
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg4").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(5); }, 500);
+            },
+            wipeDown: function () {
+                setTimeout(function () { showquestion(3); }, 500);
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg5").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(6); }, 500);
+            },
+            wipeDown: function () {
+                setTimeout(function () { showquestion(4); }, 500);
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+
+        $("#pg6").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(7); }, 500);
+            },
+            wipeDown: function () {
+                setTimeout(function () { showquestion(5); }, 500);
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg7").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(8); }, 500);
+            },
+            wipeDown: function () {
+                setTimeout(function () { showquestion(6); }, 500);
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg8").touchwipe({
+            wipeUp: function () {
+                setTimeout(function () { showquestion(9); }, 500);
+            },
+            wipeDown: function () {
+                setTimeout(function () { showquestion(7); }, 500);
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg9").touchwipe({
+            wipeUp: function () {
+                document.location = "drawing.html";
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg10").touchwipe({
+            wipeUp: function () {
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg11").touchwipe({
+            wipeUp: function () {
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        $("#pg12").touchwipe({
+            wipeUp: function () {
+            },
+            wipeDown: function () {
+            },
+            min_move_x: 50,
+            min_move_y: 50,
+            preventDefaultEvents: true
+        });
+        var scorearr = [[2, 1, 0], [2, 1, 0], [1, 2, 0], [2, 1, 0], [1, 2, 0], [2, 1, 0], [2, 1, 0], [1, 2, 0]];
+        var score = 0;
+        function caculatescore(idx, selection) {
+            score += scorearr[idx - 2][selection - 1];
+            console.log("score:" + score);
+        }
+        function showquestion(idx) {
+            console.log("showquestion:" + idx);
+            idx = idx - 1;
+            $("#pg" + (idx + 1)).css("display", "block");
+            $("#pg" + (idx)).css("display", "none");
+            //jiazai2();
+            $("#pg" + (idx + 1) + "_1").show().animate({ 'opacity': 1 }, 300, function () {
+                $("#pg" + (idx + 1) + "_0").css("display", "block");
+                $("#pg" + (idx + 1) + "_0").addClass('jie_animation bounceIn');
+                setTimeout(function () {
+                    $("#pg" + (idx + 1) + "_0").removeClass('jie_animation bounceIn');
+
+                    $("#pg" + (idx + 1) + "_1_1").fadeIn(500);
+                    $("#pg" + (idx + 1) + "_1_2").fadeIn(500);
+                    $("#pg" + (idx + 1) + "_1_3").fadeIn(500);
+                }, 500);
+            });
+        }
+
+        function showresult() {
+            var idx = 10;
+            var myDate = new Date();
+            idx += myDate.getSeconds() % 2;
+            $("#pg" + idx).css("display", "block");
+            $("#pg9").css("display", "none");
+            //jiazai2();
+            $("#pg" + idx + "_1").show().animate({ 'opacity': 1 }, 300, function () {
+                $("#pg" + idx + "_0").css("display", "block");
+                $("#pg" + idx + "_0").addClass('jie_animation bounceIn');
+                setTimeout(function () {
+                    $("#pg" + idx + "_0").removeClass('jie_animation bounceIn');
+                    $("#pg" + idx + "_1_1").fadeIn(500, function () { $("#pg" + idx + "_1_1").addClass('service-icon'); });
+                    $("#pg" + idx + "_1_2").fadeIn(500);
+                }, 500);
+            });
+        }
+
+        function choose(idx, selection) {
+            caculatescore(idx, selection);
+            $("#pg" + idx + "_1_" + selection).addClass('jie_animation warn');
+            setTimeout(function () {
+                $("#pg" + idx + "_1_" + selection).removeClass('jie_animation warn');
+                setTimeout(function () { showquestion(idx) }, 150);
+            }, 300);
+        }
+        function choose2(idx, selection) {
+            caculatescore(idx, selection);
+            $("#pg" + idx + "_1_" + selection).addClass('jie_animation warn');
+            setTimeout(function () {
+                $("#pg" + idx + "_1_" + selection).removeClass('jie_animation warn');
+                setTimeout(function () { showresult(); }, 150);
+            }, 300);
+        }
+
+        function makeresult(name, score, isshare) {
+            $("#pg12").css("display", "block");
+            $("#pg10").css("display", "none");
+            $("#pg11").css("display", "none");
+            var html = "";
+            sharelink = sharelink + "?result=" + encodeURI(encodeURI(name)) + "|" + score;
+            if (score < 5) { html = "<div class=\"title\">" + name + "</div><p>这辈子将跳槽 <font style=\"font-size:1.6em;color:#f00\">" + score + "</font> 次，<br/>报告老板，<br/> TA基本是个安心上班的好员工！</p>"; }
+            else if (score >= 5 && score < 10) { html = "<div class=\"title\">" + name + "</div><p>这辈子将跳槽 <font style=\"font-size:1.6em;color:#f00\">" + score + "</font> 次，<br/>不久的将来即将登上人生的巅峰！<br/> 快来跟他做盆友！</p>"; }
+            else { html = "<div class=\"title\">" + name + "</div><p>这辈子将跳槽 <font style=\"font-size:1.6em;color:#f00\">" + score + "</font> 次，<br/>纳尼？<br/> 你确定老板看不到这条朋友圈？</p>"; }
+            $("#pg12_1").show().animate({ 'opacity': 1 }, 600, function () {
+                $("#pg12_0").css("display", "block");
+                $("#pg12_0").addClass('jie_animation bounceIn');
+                setTimeout(function () {
+                    $("#pg12_0").removeClass('jie_animation bounceIn');
+                    $("#pg12_1_2").fadeIn(500);
+                    $("#pg12_1_3").html(html);
+                    $("#pg12_1_3").fadeIn(500);
+                    $("#pg12_1_4").fadeIn(500);
+                    if (!isshare) {
+                        $("#pg12_1_1").fadeIn(500);
+                        $("#pg12_1_5").fadeIn(500);
+                        //$("#pg12_0").css("background-image", "url(images/result.png)");
+                    } else {
+                        $("#pg12_1_2").html("我也测试");
+                        //$("#pg12_0").css("background-image", "url(images/my.png)");
+                    }
+                }, 500);
+            });
+        }
+
+        //分享结果
+        $("#pg12_1_5").click(function () {
+            $("#bmg").hide();
+            html2canvas(document.body, {
+                height: $("#pg12").outerHeight() * 0.67,
+                onrendered: function (canvas) {
+                    var url = canvas.toDataURL();
+                    $("#save").html($("<img>").attr("src", url));
+                    $("#save").show();
+                }
+            });
+        });
+
+        function showshareresult(result) {
+            var name = result.split('|')[0];
+            var score = result.split('|')[1];
+            name = decodeURI(decodeURI(name));
+            makeresult(name, score, true);
+        }
+        $("#save").click(function () { $("#save").fadeOut(500); });
+
+        //重来一次
+        $("#pg12_1_2").click(function () {
+            document.location.href = "index.htm";
+        });
+        //分享结果
+        $("#pg12_1_1").click(function () {
+            $(".d-share").fadeIn(500);
+        });
+
+
+
+        $(".d-share").click(function () { $(".d-share").fadeOut(500); });
+        $("#pg10_1_1").click(function () {
+            var name = $("#tbname1").val();
+            if (name == "" || name == "请输入名字") {
+                alert("请请输入名字，再生成跳槽结果");
+            } else {
+                makeresult(name, score, false);
+            }
+        });
+
+        $("#pg11_1_1").click(function () {
+            var name = $("#tbname2").val();
+            if (name == "" || name == "请输入名字") {
+                alert("请请输入名字，再生成跳槽结果");
+            } else {
+                makeresult(name, score, false);
+            }
+        });
+
+
+        $("#splay").click(function () {
+            audio.pause();
+            $("#splay").hide();
+            $("#sclose").show();
+        });
+
+        $("#sclose").click(function () {
+            audio.play();
+            $("#splay").show();
+            $("#sclose").hide();
+        });
+    </script>
+</body>
+
+</html>
