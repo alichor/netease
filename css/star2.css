@@ -232,13 +232,13 @@ html {
     }
 }
 
-#pg0_2 {
+#pg0_2,#pg1_2,#pg2_1,#pg3_1 {
     width: 60%;
     height: 90px;
     left: 20%;
     bottom: 5%;
     position: absolute;
-    border: 1px solid #fef7f1;
+    z-index:99;
 }
 
 #pg0_1 {
@@ -460,4 +460,97 @@ input:checked+.banner-nav-a {
 input:checked+.item {
     border: 1px solid #a99281;
     box-shadow: 0 0px 2px #a99281;
+}
+
+#pg2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    background: url(../image/p3.jpg) no-repeat center;
+    background-size: 100% 100%
+}
+#pg2_ticket{
+    width: 75%;
+    height: 200px;
+    left: 12.5%;
+    bottom: 9%;
+    position: absolute;
+    overflow: hidden;
+}
+#pg2_ticket img{
+    width:100%;
+    top:-150px;
+    position: relative;
+}
+#pg2_ticket .move{
+    transform: translateY(150px);
+    transition: transform 5s ease 2s;
+}
+
+#pg3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    background: url(../image/p4.jpg) no-repeat center;
+    background-size: 100% 100%
+}
+#pg3_ticket{
+    width: 90%;
+    height: 900px;
+    left: 5%;
+    top: 8%;
+    position: absolute;
+    overflow: hidden;
+}
+#pg3_ticket img{
+    width:100%;
+    top:-900px;
+    position: relative;
+}
+#pg3_ticket .move{
+    transform: translateY(900px);
+    transition: transform 6s ease 0s;
+}
+#pg3_1{
+    width:50%;
+    height:60px;
+    left: 25%;
+    bottom: 5%;
+    position: absolute;
+}
+#pg3_1 img{
+    width: 100%;
+}
+#pg4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    background: url(../image/p5.jpg) no-repeat center;
+    background-size: 100% 100%
+}
+#pg4_container{
+    width: 75%;
+    height: 750px;
+    left: 13.5%;
+    top: 27%;
+    position: absolute;
+    overflow: hidden;
+}
+#pg4_container ul {
+    width: 100%;
+    height: 100%;
+}
+
+#pg4_container ul li {
+    width: 33%;
+    float: left;
+    margin:3px 0;
+    display: inline;
+}
+#pg4_container ul li img{
+    width: 90%;
+    margin:3px；
 }
