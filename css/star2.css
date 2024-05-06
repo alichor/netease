@@ -214,8 +214,8 @@ html {
     position: absolute;
     color: #f1dd98;
     text-align: center;
-    font-size: 1.8rem;
-    text-decoration: underline;
+    font-size: 20px;
+    font-family: HYYAKUHEI-85J;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     -webkit-animation-timing-function: ease-in-out;
@@ -485,7 +485,7 @@ input:checked+.item {
 }
 #pg2_ticket .move{
     transform: translateY(150px);
-    transition: transform 5s ease 2s;
+    transition: transform 5s ease 0s;
 }
 
 #pg3 {
@@ -504,14 +504,73 @@ input:checked+.item {
     position: absolute;
     overflow: hidden;
 }
-#pg3_ticket img{
+#pg3_ticket .bg{
     width:100%;
-    top:-900px;
-    position: relative;
+    top:0px;
+    position: absolute;
 }
 #pg3_ticket .move{
     transform: translateY(900px);
     transition: transform 6s ease 0s;
+}
+#idol{
+    width: 100%;
+    right: -50px;
+    top: 115px;
+    position: absolute;
+}
+#name{
+    font-family: HYYAKUHEI-85J;
+    color: #171717;
+    font-size: 22px;
+    text-shadow:0 1px 2px #47fcd6;
+    left:20px;
+    top:170px;
+    position: absolute;
+}
+#groupname{
+    font-family: HYYAKUHEI-85J;
+    color: #171717;
+    font-size: 22px;
+    text-shadow:0 1px 2px #47fcd6;
+    left:18px;
+    top:225px;
+    position: absolute;
+}
+#seat{
+    font-family: HYYAKUHEI-85J;
+    color: #171717;
+    font-size: 16px;
+    text-shadow:0 1px 2px #47fcd6;
+    left:18px;
+    top:250px;
+    position: absolute;
+}
+#seat span{
+    font-family: DIN-BOLD;
+    color:#171717;
+    font-style:italic;
+    text-shadow:0 1px 2px #47fcd6;
+    font-size: 36px;
+}
+#neighbor{
+    font-family: HYYAKUHEI-85J;
+    color: #171717;
+    font-size: 22px;
+    text-shadow:0 1px 2px #47fcd6;
+    left:18px;
+    top:315px;
+    position: absolute;
+}
+#slogan{
+    font-family: DZCFZJ;
+    color: #fff;
+    font-size: 24px;
+    text-shadow:0 1px 2px #ddb181;
+    left:40px;
+    top:360px;
+    width: 400px;
+    position: absolute;
 }
 #pg3_1{
     width:50%;
@@ -522,6 +581,24 @@ input:checked+.item {
 }
 #pg3_1 img{
     width: 100%;
+}
+
+@font-face {
+    font-family:DZCFZJ ;
+    src: url(../fonts/DZCFZJ.TTF);
+}
+/**number*/
+@font-face {
+    font-family:DIN-BOLD ;
+    src: url(../fonts/DIN-BOLD.OTF);
+}
+@font-face {
+    font-family:HYYAKUHEI-85J ;
+    src: url(../fonts/HYYAKUHEI-85J.TTF);
+}
+@font-face {
+    font-family: HYYAKUHEI-55J;
+    src: url(../fonts/HYYAKUHEI-55J.TTF);
 }
 #pg4 {
     width: 100%;

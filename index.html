@@ -28,9 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div id="sign_name" contenteditable="true">
-                签名栏
-            </div>
+            <div id="sign_name" contenteditable="true" onfocus="clearText()">签名栏</div>
             <!--按钮区域-->
             <div id="pg0_2"></div>
         </div>
@@ -69,8 +67,7 @@
                                     alt="" /></a>
                         </li>
                         <li>
-                            <img id="targetimg" src="./image/item_06.png" class="item-nav-img"
-                                    alt="" />
+                            <img id="targetimg" src="./image/item_06.png" class="item-nav-img" alt="" />
                         </li>
                         <li>
                             <a href="#item-7" class="item"><img src="./image/item_07.png" class="item-nav-img"
@@ -210,8 +207,15 @@
         </div>
         <div id="pg3" style="display: none">
             <div id="pg3_ticket">
-                <img src="./image/ticket_full.png" />
+                <img class="bg" src="./image/ticket_full.png" />
+                <img id="idol" src="./image/idol1.png" />
+                <div id="name">大帝</div>
+                <div id="groupname">第五人格</div>
+                <div id="seat"><span>09</span> 排<span>99</span> 座</div>
+                <div id="neighbor">卡梅隆安东尼</div>
+                <div id="slogan">你好世界</div>
             </div>
+
             <!--按钮区域-->
             <div id="pg3_1">
                 <img src="./image/btn_pick.png" />
@@ -220,22 +224,22 @@
         <div id="pg4" style="display: none">
             <div id="pg4_container">
                 <ul>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift1.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
-                    <li><img src="./image/gift0.png"/></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift1.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
+                    <li><img src="./image/gift0.png" /></li>
                 </ul>
             </div>
             <!--按钮区域-->
             <div id="pg4_1">
             </div>
         </div>
-        
+
         <div id="pg12" style="display: none">
             <div id="pg12_0" style="display: none;">
             </div>
@@ -276,6 +280,11 @@
             if (r != null) return unescape(r[2]); return null; //返回参数值
         }
 
+        function clearText() {
+            var text = $("#sign_name").text().replace("签名栏", "");
+            $("#sign_name").text(text);
+        }
+
         $("#bmg").bgmusic({ 'url': 'http://h5.vr.mgtv.com/2016/zmfm/img2/music.mp3', 'autoplay': true });
         var audio = document.querySelector('audio');
         var sharelink = "http://h5.vr.mgtv.com/2016/zmfm/star2.htm";
@@ -283,7 +292,7 @@
             var result = getUrlParam("result");
 
             console.log("ready:" + result);
-           
+
             //audio.play();
             //$(".sound").css("display", "block");
             /*
@@ -298,9 +307,15 @@
             });
             //按钮跳转 P1跳P2
             $("#pg0_2").click(function () {
-                console.log("showquestion:");
-                $("#pg1").css("display", "block");
-                $("#pg0").css("display", "none");
+                var text = $("#sign_name").text();
+                console.log(text);
+                if (text == "" || text == "签名栏") {
+                    alert("请填写签名哦！");
+                    return;
+                } else {
+                    $("#pg1").css("display", "block");
+                    $("#pg0").css("display", "none");
+                }
             });
             //P2跳P3
             $("#pg1_2").click(function () {
@@ -308,34 +323,31 @@
                 $("#pg2").css("display", "block");
                 $("#pg1").css("display", "none");
                 console.log("滑动");
-                setTimeout(function(){
+                setTimeout(function () {
                     $("#pg2_ticket").find("img").addClass("move");
-                },500);
-                
+                }, 500);
+
             });
             //P3跳P4
             $("#pg2_1").click(function () {
-                console.log("showquestion:");
+                var text = $("#sign_name").text();
+                console.log("同步签名栏的名字:");
+                $("#name").text(text);
                 $("#pg3").css("display", "block");
                 $("#pg2").css("display", "none");
-                console.log("滑动");
-                setTimeout(function(){
-                    $("#pg3_ticket").find("img").addClass("move");
-                },500);
             });
             //P4跳P5
             $("#pg3_1").click(function () {
-                console.log("showquestion:");
                 $("#pg4").css("display", "block");
                 $("#pg3").css("display", "none");
             });
-            
+
             //切换图片
             $("#targetimg").click(function () {
                 console.log("切换图片");
-                $("#targetimg").attr("src","./image/item_05.png");
+                $("#targetimg").attr("src", "./image/item_05.png");
             });
-            
+
 
             var title = "丁磊邀请你参加520发布会",
                 link = "http://h5.vr.mgtv.com/2016/zmfm/star2.htm",
